@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrew & Angela</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sticky Save The Date -->
+<div class="top-bar">
+<a href="event.ics" download class="save-date">SAVE THE DATE</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h1>ANDREW</h1>
+<h2>&</h2>
+<h1>ANGELA</h1>
+<p class="hero-hashtag">#AAforever26</p>
+<p class="hero-sub">WE ARE GETTING MARRIED</p>
+</div>
+</section>
+
+<!-- OUR STORY -->
+<section class="white-section">
+<h2>OUR STORY</h2>
+<img src="assets/images/ourstory/story.jpg" class="story-img">
+<p>
+A love rooted in faith, friendship, and grace. From the first shy hello to the confident "yes," we've grown together through laughter, tears, and countless ordinary days made extraordinary by each other's presence. We can't wait to celebrate with you as we begin this next chapter.
+</p>
+</section>
+
+<!-- FROM OUR HEARTS -->
+<section class="green-section">
+<h2>FROM OUR HEARTS</h2>
+
+<div class="heart-card">
+<img src="assets/images/fromourhearts/bride.jpg">
+<div>
+<h3>Angela</h3>
+<p>I found love where I least expected and forever where I prayed.</p>
+</div>
+</div>
+
+<div class="heart-card">
+<img src="assets/images/fromourhearts/groom.jpg">
+<div>
+<h3>Andrew</h3>
+<p>She is my answered prayer, my peace, my home.</p>
+</div>
+</div>
+
+</section>
+
+<!-- WEDDING LOCATION -->
+<section class="white-section">
+<h2>WEDDING LOCATION & SCHEDULE</h2>
+<p>
+We're excited to celebrate with family and friends. Below are the main events and their approximate times — please plan to arrive a little early for each ceremony.
+</p>
+
+<div class="schedule-card">
+<p><strong>Venue:</strong> Chuna Hall</p>
+<p>Traditional Wedding — 10:00am</p>
+<p>White Wedding — 12:00am</p>
+<p>Reception — 2:00pm</p>
+<p>After Party — 9:00pm</p>
+</div>
+</section>
+
+<!-- PHOTOBOOK -->
+<section class="green-section">
+<h2>PHOTOBOOK</h2>
+
+<p class="photobook-text">
+Every picture tells a story, every moment a memory. Step into our journey of love, laughter, and forever.
+As you scroll through these memories, you're not just viewing our past - you're witnessing the foundation of our forever. You're seeing the grace that brought us together, the faith that keeps us grounded, and the love that makes us brave enough to say "yes" to a lifetime. These are the moments we'll tell our children about.
+These are the memories that will carry us through every season ahead.
+Thank you for being part of our story. Open the photo book and walk with us through the beautiful, messy, grace-filled journey that led us to July 11, 2026.
+</p>
+
+<button onclick="toggleGallery()" class="btn-white">Open Photobook</button>
+
+<div id="gallery" class="gallery">
+<button onclick="toggleGallery()" class="back-btn">← Back</button>
+
+<img src="assets/images/photobook/photobook1.jpg">
+<img src="assets/images/photobook/photobook2.jpg">
+<img src="assets/images/photobook/photobook3.jpg">
+<img src="assets/images/photobook/photobook4.jpg">
+<img src="assets/images/photobook/photobook5.jpg">
+<img src="assets/images/photobook/photobook6.jpg">
+<img src="assets/images/photobook/photobook7.jpg">
+<img src="assets/images/photobook/photobook8.jpg">
+<img src="assets/images/photobook/photobook9.jpg">
+<img src="assets/images/photobook/photobook10.jpg">
+
+<button onclick="toggleGallery()" class="back-btn">← Back</button>
+</div>
+</section>
+
+<!-- QUESTIONS -->
+<section class="white-section">
+<h2>QUESTIONS + ANSWERS</h2>
+
+<h1 class="qa-title">ANDREW & ANGELA</h1>
+<p class="qa-hashtag">#AAforever26</p>
+
+<div class="countdown">
+<div><span id="days"></span><small>DAYS</small></div>
+<div><span id="hours"></span><small>HOURS</small></div>
+<div><span id="minutes"></span><small>MINUTES</small></div>
+<div><span id="seconds"></span><small>SECONDS</small></div>
+</div>
+
+<div class="qa">
+<h4>WHERE IS THE WEDDING TAKING PLACE?</h4>
+<p>The wedding will be held in Ogbomoso, Nigeria, with all events taking place at select venues within the city. We'll provide a full event address list, transport details, and location pins closer to the date.</p>
+
+<h4>WHAT DAY IS THE WEDDING?</h4>
+<p>Saturday, July 11, 2026 — save the date and mark your calendars!</p>
+
+<h4>WHAT'S THE DRESS CODE FOR GUESTS?</h4>
+<p>We'd love all our guests to wear the selected Aso Ebi. We'll send purchase info for Aso Ebi very soon!</p>
+
+<h4>I'M COMING FROM OUTSIDE OGBOMOSO/NIGERIA - WHAT SHOULD I KNOW?</h4>
+<p>We're so honoured! Please plan your travel and accommodation early. Ogbomoso is a vibrant busy city, so arriving a day or two before is highly recommended. We'll share helpful travel tips and a guide closer to the date.</p>
+
+<h4>WHERE SHOULD I STAY?</h4>
+<p>All options are within 5-10 minutes of the venue. We'll provide directions, pricing, and transport info.</p>
+
+<h4>WHAT TIME SHOULD I ARRIVE?</h4>
+<p>We kindly ask that guests arrive 30 minutes early for each event to help us stay on schedule — especially for the Nikkah at 9:00 AM sharp.</p>
+
+<h4>CAN I BRING A GIFT?</h4>
+<p>Your presence is the best gift! But for those who wish to bless us further, we'll share our wedding registry and cash gift details soon.</p>
+
+<h4>CAN I TAKE PHOTOS OR VIDEOS?</h4>
+<p>Absolutely — just respectfully! We'll have professional photographers covering the day, but feel free to capture memories.</p>
+
+<h4>ARE CHILDREN ALLOWED?</h4>
+<p>Yes, kids are welcome! Please let us know in your RSVP how many you'll bring so we can plan accordingly.</p>
+
+<h4>WHAT'S THE AFTER PARTY LIKE?</h4>
+<p>Laid-back vibes with music, dancing, and fun till late. No strict dress code — come in glam or comfy partywear, but come ready to dance!</p>
+</div>
+</section>
+
+<!-- CELEBRATE -->
+<section class="green-section">
+<h2>CELEBRATE WITH US</h2>
+<p>
+We'd love to celebrate with you. Please let us know if you can join our ceremony and reception on July 11, 2026. Use the RSVP form below to tell us who is coming, how many guests you'll bring, and any dietary needs so we can plan accordingly.
+</p>
+<button onclick="openRSVP()" class="btn-white">RSVP</button>
+</section>
+
+<!-- RSVP MODAL -->
+<div id="rsvpModal" class="modal">
+<div class="modal-content">
+<span onclick="closeRSVP()" class="close">×</span>
+<h3>RSVP</h3>
+<form action="https://formspree.io/f/xeeladgd" method="POST">
+<input type="text" name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="number" name="guests" placeholder="Number of guests">
+<input type="text" name="dietary" placeholder="Dietary requirements">
+<div class="modal-buttons">
+<button type="submit" class="btn-green">Send RSVP</button>
+<button type="button" onclick="closeRSVP()" class="btn-grey">Cancel</button>
+</div>
+</form>
+</div>
+</div>
+
+<div class="footer">
+Site by Damilare Andrew Adetunji
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
