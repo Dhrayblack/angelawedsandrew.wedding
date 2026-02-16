@@ -23,11 +23,15 @@ body{
 
 header{
   position:fixed;
-  top:15px;
+  top:25px;
   left:50%;
   transform:translateX(-50%);
-  z-index:999;
+  z-index:1000;
+  width:100%;
+  display:flex;
+  justify-content:center;
 }
+
 
 .save-date{
   background:rgba(255,255,255,.9);
@@ -43,6 +47,7 @@ header{
 
 section{
   min-height:100vh;
+  width: 100%;
   padding:120px 25px; /* more vertical space */
   text-align:center;
   display:flex;
@@ -72,6 +77,8 @@ section p{
 /* ================= HERO ================= */
 
 .hero{
+  min-height:100vh;
+  width:100%;
   background-size:cover;
   background-position:center;
   transition:background-image 1s ease-in-out;
@@ -347,4 +354,19 @@ footer{
 
 .qa-item p{
   line-height:1.8;
+}
+
+/* ================= FLORAL BACKGROUND ================= */
+
+body{
+  margin:0;
+  font-family:Georgia,serif;
+  overflow-x:hidden;
+  color:#111;
+
+  background:
+    url("assets/images/decor/floral-frame.png") no-repeat center center fixed,
+    #ffffff;
+
+  background-size:cover;
 }
