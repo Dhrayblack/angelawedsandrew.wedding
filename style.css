@@ -361,6 +361,22 @@ html, body {
   height: 100%;
 }
 
+/* ================= FULL FLORAL BACKGROUND ================= */
+
+body{
+  margin:0;
+  font-family:Georgia, serif;
+  overflow-x:hidden;
+  color:#111;
+  line-height:1.7;
+
+  background-image: url("assets/images/decor/floral-full.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  background-attachment: scroll; /* IMPORTANT for mobile */
+}
+
 body {
   background-color: #fdfcf9; /* soft cream base */
   background-image: url("assets/images/decor/floral-full.png");
@@ -369,6 +385,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+
 
 /* Make green sections slightly transparent so florals show softly */
 #fromourhearts,
