@@ -354,3 +354,24 @@ footer{
     padding:120px 80px;
   }
 }
+
+/* ================= FULL FLORAL FRAME FIX ================= */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url("assets/images/decor/floral-frame.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto; /* THIS is the key fix */
+}
+
+@media (max-width: 768px){
+  body{
+    background-size: 100% auto;
+  }
+}
