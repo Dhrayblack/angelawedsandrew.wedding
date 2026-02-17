@@ -43,14 +43,21 @@ header{
 section{
   min-height:100vh;
   width:100%;
-  padding: 140px 25px;
+  padding: 100px 25px;
   text-align:center;
-  
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
 }
+
+@media (max-width: 768px){
+  section{
+    min-height:auto;   /* prevent mobile vh bug */
+    padding:90px 20px;
+  }
+}
+
 
 section h2{
   font-size:28px;
@@ -307,12 +314,12 @@ img{
 }
 
 /* ================= FOOTER ================= */
-
 footer{
-  padding:12px;
+  padding:20px 10px;
   font-size:12px;
   text-align:center;
   background:transparent;
+  margin-top:0;
 }
 
 /* ================= RESPONSIVE ================= */
