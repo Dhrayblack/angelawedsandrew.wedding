@@ -327,3 +327,21 @@ body::before{
   pointer-events:none;
   z-index:-1;
 }
+
+/* ================= FIX EXTRA MOBILE SCROLL ================= */
+
+@media (max-width: 768px) {
+
+  section {
+    min-height: auto;   /* remove forced full screen */
+  }
+
+  body {
+    min-height: auto;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+}
