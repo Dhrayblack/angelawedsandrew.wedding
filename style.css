@@ -219,10 +219,17 @@ img{
 
 .gallery-images{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(2,1fr); /* always 2 columns */
+  gap:12px;
   margin-top:20px;
 }
+
+@media (min-width:768px){
+  .gallery-images{
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  }
+}
+
 
 .gallery-images img{
   width:100%;
