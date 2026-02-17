@@ -1,14 +1,14 @@
 /* =================================
    HERO SLIDESHOW – 10 SECONDS
 ================================= */
-
 const heroImages = [
-  "assets/images/hero/hero-1.jpg",
-  "assets/images/hero/hero-2.jpg",
-  "assets/images/hero/hero-3.jpg",
-  "assets/images/hero/hero-4.jpg",
-  "assets/images/hero/hero-5.jpg"
+  "assets/images/hero/hero-1.webp",
+  "assets/images/hero/hero-2.webp",
+  "assets/images/hero/hero-3.webp",
+  "assets/images/hero/hero-4.webp",
+  "assets/images/hero/hero-5.webp"
 ];
+
 
 let heroIndex = 0;
 const heroSection = document.querySelector(".hero");
@@ -19,8 +19,10 @@ function updateHero() {
   heroIndex = (heroIndex + 1) % heroImages.length;
 }
 
-updateHero();
-setInterval(updateHero, 10000); // 10 seconds
+window.addEventListener("load", () => {
+  updateHero();
+  setInterval(updateHero, 10000);
+});  // 10 seconds
 
 
 

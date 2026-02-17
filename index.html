@@ -6,6 +6,7 @@
 <title>Andrew & Angela</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="assets/images/hero/hero-1.webp">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 
 <section id="ourstory">
 <h2>OUR STORY</h2>
-<img src="assets/images/ourstory/story.jpg">
+<img src="assets/images/ourstory/story.jpg" loading="lazy" decoding="async">
 <p>
 A love rooted in faith, friendship, and grace. From the first shy hello to the confident "yes," we've grown together through laughter, tears, and countless ordinary days made extraordinary by each other's presence. We can't wait to celebrate with you as we begin this next chapter.
 </p>
@@ -36,7 +37,7 @@ A love rooted in faith, friendship, and grace. From the first shy hello to the c
 <h2>FROM OUR HEARTS</h2>
 
 <div class="heart-card">
-<img src="assets/images/fromourhearts/bride.jpg">
+<img src="assets/images/fromourhearts/bride.jpg" loading="lazy" decoding="async">
 <div>
 <h3>Angela</h3>
 <p>I found love where I least expected and forever where I prayed.</p>
@@ -44,7 +45,7 @@ A love rooted in faith, friendship, and grace. From the first shy hello to the c
 </div>
 
 <div class="heart-card">
-<img src="assets/images/fromourhearts/groom.jpg">
+<img src="assets/images/fromourhearts/bride.jpg" loading="lazy" decoding="async">
 <div>
 <h3>Andrew</h3>
 <p>She is my answered prayer, my peace, my home.</p>
@@ -88,12 +89,13 @@ Thank you for being part of our story. Open the photo book and walk with us thro
   <div class="card-content">
     <button class="close" aria-label="Close photobook" onclick="closePhotobook()">← Back</button>
     <div class="gallery-images">
-      <img src="assets/images/photobook/photobook1.jpg" alt="">
-      <img src="assets/images/photobook/photobook2.jpg" alt="">
-      <img src="assets/images/photobook/photobook3.jpg" alt="">
-      <img src="assets/images/photobook/photobook4.jpg" alt="">
-      <img src="assets/images/photobook/photobook5.jpg" alt="">
-    </div>
+  <img src="assets/images/photobook/photobook1.jpg" alt="" loading="lazy" decoding="async">
+  <img src="assets/images/photobook/photobook2.jpg" alt="" loading="lazy" decoding="async">
+  <img src="assets/images/photobook/photobook3.jpg" alt="" loading="lazy" decoding="async">
+  <img src="assets/images/photobook/photobook4.jpg" alt="" loading="lazy" decoding="async">
+  <img src="assets/images/photobook/photobook5.jpg" alt="" loading="lazy" decoding="async">
+</div>
+
   </div>
 </div>
 
