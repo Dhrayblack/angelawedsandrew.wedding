@@ -7,24 +7,13 @@
 /* ================= BODY ================= */
 
 body{
-  font-family:Georgia,serif;
+  font-family:Georgia, serif;
   overflow-x:hidden;
   color:#111;
   line-height:1.7;
   position:relative;
 }
 
-/* ================= FLORAL FRAME OVERLAY ================= */
-
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:url("assets/images/decor/floral-frame.png") no-repeat center;
-  background-size:cover;
-  pointer-events:none;
-  z-index:-1;
-}
 
 /* ================= HEADER ================= */
 
@@ -128,7 +117,7 @@ img{
 #fromourhearts,
 #photobook,
 #celebrate{
-  background:rgba(138,184,156,0.85);
+  background:rgba(138,184,156,0.88);
 }
 
 /* ================= HEART CARDS ================= */
@@ -239,33 +228,16 @@ img{
   border-radius:15px;
 }
 
-/* ================= WHITE CARD (RSVP BUTTON) ================= */
+/* ================= RSVP BUTTON CARD ================= */
 
-.white-card{
-  background:#ffffff;
-  padding:25px 35px;
-  border-radius:20px;
-  box-shadow:0 15px 40px rgba(0,0,0,.08);
-  border:1px solid rgba(0,0,0,.05);
-  display:inline-block;
-  margin-top:25px;
-}
-
-.rsvp-btn{
-  background:#488d5f;
-  color:#ffffff;
-  padding:14px 35px;
+.card-button{
+  background:white;
+  padding:14px 25px;
+  border-radius:15px;
   border:none;
-  border-radius:12px;
-  font-weight:bold;
   cursor:pointer;
-  font-size:15px;
-  transition:.2s ease;
-}
-
-.rsvp-btn:hover{
-  background:#279149;
-  transform:translateY(-2px);
+  margin-top:20px;
+  font-weight:bold;
 }
 
 /* ================= RSVP MODAL ================= */
@@ -303,18 +275,6 @@ img{
 .form-status{
   font-size:13px;
   margin-top:10px;
-}
-
-/* ================= BUTTON ================= */
-
-.card-button{
-  background:white;
-  padding:14px 25px;
-  border-radius:15px;
-  border:none;
-  cursor:pointer;
-  margin-top:20px;
-  font-weight:bold;
 }
 
 /* ================= QUESTIONS + ANSWERS ================= */
@@ -355,42 +315,15 @@ footer{
   }
 }
 
-/* ================= FULL FLORAL BACKGROUND ================= */
+/* ================= FLORAL BACKGROUND OVERLAY ================= */
 
-html, body {
-  height: 100%;
-}
-
-/* ================= FULL FLORAL BACKGROUND ================= */
-
-body{
-  margin:0;
-  font-family:Georgia, serif;
-  overflow-x:hidden;
-  color:#111;
-  line-height:1.7;
-
-  background-image: url("assets/images/decor/floral-full.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto;
-  background-attachment: scroll; /* IMPORTANT for mobile */
-}
-
-body {
-  background-color: #fdfcf9; /* soft cream base */
-  background-image: url("assets/images/decor/floral-full.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
-
-/* Make green sections slightly transparent so florals show softly */
-#fromourhearts,
-#photobook,
-#celebrate {
-  background: rgba(138,184,156,0.88);
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("assets/images/decor/floral-full.png") no-repeat center top;
+  background-size:cover;
+  opacity:0.9;
+  pointer-events:none;
+  z-index:-1;
 }
