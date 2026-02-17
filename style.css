@@ -368,3 +368,41 @@ body::before{
   justify-content:center;
   align-items:center;
 }
+
+/* ================= GALLERY GRID ================= */
+
+.gallery-images{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.gallery-images img{
+  width:100%;
+  border-radius:15px;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+
+.gallery-images img:hover{
+  transform:scale(1.05);
+}
+
+/* ================= IMAGE VIEWER ================= */
+
+.image-viewer{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+  cursor:pointer;
+}
+
+.image-viewer img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:15px;
+}

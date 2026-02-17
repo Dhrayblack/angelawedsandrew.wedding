@@ -183,3 +183,14 @@ function createHeart() {
 
 setInterval(createHeart, 1200);
 
+function openImage(src) {
+  const viewer = document.getElementById("imageViewer");
+  const img = document.getElementById("fullImage");
+  img.src = src;
+  viewer.style.display = "flex";
+}
+
+function closeImage() {
+  const viewer = document.getElementById("imageViewer");
+  viewer.style.display = "none";
+}
