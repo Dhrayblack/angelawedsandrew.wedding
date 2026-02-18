@@ -194,3 +194,21 @@ function closeImage() {
   const viewer = document.getElementById("imageViewer");
   viewer.style.display = "none";
 }
+
+/* =================
+   AUTO LOAD PHOTOBOOK IMAGES
+================= */
+
+const container = document.getElementById("photoContainer");
+
+if (container) {
+  for (let i = 1; i <= 19; i++) {
+    const img = document.createElement("img");
+    img.src = `assets/images/photobook/photobook${i}.jpg`;
+    img.loading = "lazy";
+    img.onclick = function() {
+      openImage(this.src);
+    };
+    container.appendChild(img);
+  }
+}

@@ -105,20 +105,17 @@ Thank you for being part of our story. Open the photo book and walk with us thro
 </section>
 
 <!-- gallery: now a centered white card overlay -->
+
+
 <div id="gallery" class="gallery card-modal" aria-hidden="true">
   <div class="card-content">
-    <button class="close" aria-label="Close photobook" onclick="closePhotobook()">← Back</button>
-   <div class="gallery-images">
-  <img src="assets/images/photobook/photobook1.jpg" alt="" loading="lazy" decoding="async" onclick="openImage(this.src)">
-  <img src="assets/images/photobook/photobook2.jpg" alt="" loading="lazy" decoding="async" onclick="openImage(this.src)">
-  <img src="assets/images/photobook/photobook3.jpg" alt="" loading="lazy" decoding="async" onclick="openImage(this.src)">
-  <img src="assets/images/photobook/photobook4.jpg" alt="" loading="lazy" decoding="async" onclick="openImage(this.src)">
-  <img src="assets/images/photobook/photobook5.jpg" alt="" loading="lazy" decoding="async" onclick="openImage(this.src)">
-</div>
+    <button class="close" onclick="closePhotobook()">← Back</button>
 
+    <div class="gallery-images" id="photoContainer"></div>
 
   </div>
 </div>
+
 
 <section id="qa">
 <h2>QUESTIONS + ANSWERS</h2>
