@@ -225,7 +225,7 @@ img{
 
 /* IMPORTANT FIX */
 .card-content{
-  background:#fff;
+  background:rgba(138,184,156,0.88);
   border-radius:25px;
   padding:30px;
   width:95%;
