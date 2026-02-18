@@ -224,15 +224,17 @@ img{
 }
 
 .card-content{
-  background:#fff;
+  background:#8ab4a0;
   border-radius:25px;
   padding:30px;
   width:90%;
   max-width:950px;
-  max-height:85vh;
-  overflow:auto;
+  height:95vh;          /* use height instead */
+  overflow-y:auto;      /* only vertical scroll */
+  -webkit-overflow-scrolling: touch; /* smooth iPhone scroll */
   position:relative;
 }
+
 
 .card-content .close{
   position:absolute;
@@ -243,13 +245,14 @@ img{
   font-size:18px;
   cursor:pointer;
 }
-
 .gallery-images{
   display:grid;
-  grid-template-columns:repeat(2,1fr); /* always 2 columns */
+  grid-template-columns:repeat(2,1fr);
   gap:12px;
   margin-top:20px;
+  align-items:start;
 }
+
 
 @media (min-width:768px){
   .gallery-images{
@@ -257,10 +260,12 @@ img{
   }
 }
 
-
 .gallery-images img{
   width:100%;
+  height:100px;         /* fixed height prevents jumping */
+  object-fit:cover;
   border-radius:15px;
+  display:block;        /* prevents inline spacing issues */
 }
 
 /* ================= RSVP BUTTON CARD ================= */
