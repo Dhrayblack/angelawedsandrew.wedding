@@ -211,7 +211,7 @@ img{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:rgba(0,0,0,.5);
+  background:rgba(0,0,0,.6);
   opacity:0;
   pointer-events:none;
   transition:opacity .3s ease;
@@ -223,18 +223,21 @@ img{
   pointer-events:auto;
 }
 
+/* IMPORTANT FIX */
 .card-content{
-  background:#8ab89c;
+  background:#fff;
   border-radius:25px;
   padding:30px;
-  width:90%;
-  max-width:900px;
-  height:90vh;          /* use height instead */
-  overflow-y:auto;      /* only vertical scroll */
-  -webkit-overflow-scrolling: touch; /* smooth iPhone scroll */
-  position:relative;
-}
+  width:95%;
+  max-width:1000px;
 
+  height:90vh;           /* use height instead of max-height */
+  overflow-y:auto;       /* force vertical scroll only */
+  overflow-x:hidden;     /* prevent horizontal bug */
+
+  position:relative;
+  -webkit-overflow-scrolling: touch; /* mobile smooth scroll fix */
+}
 
 .card-content .close{
   position:absolute;
@@ -245,28 +248,37 @@ img{
   font-size:18px;
   cursor:pointer;
 }
+
+/* ================= GALLERY GRID ================= */
+
 .gallery-images{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:12px;
-  margin-top:20px;
-  align-items:start;
+  gap:14px;
+  margin-top:25px;
+  justify-items:center;
 }
 
-
+/* Desktop more columns */
 @media (min-width:768px){
   .gallery-images{
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   }
 }
 
 .gallery-images img{
-  width:100%;
-  height:100px;         /* fixed height prevents jumping */
+  width:150px;
+  height:100px;
   object-fit:cover;
-  border-radius:15px;
-  display:block;        /* prevents inline spacing issues */
+  border-radius:18px;
+  cursor:pointer;
+  transition:transform .2s ease;
 }
+
+.gallery-images img:hover{
+  transform:scale(1.05);
+}
+
 
 /* ================= RSVP BUTTON CARD ================= */
 
