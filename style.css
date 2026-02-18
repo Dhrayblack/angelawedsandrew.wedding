@@ -224,12 +224,12 @@ img{
 }
 
 .card-content{
-  background:#8ab4a0;
+  background:#8ab89c;
   border-radius:25px;
   padding:30px;
   width:90%;
-  max-width:950px;
-  height:95vh;          /* use height instead */
+  max-width:900px;
+  height:90vh;          /* use height instead */
   overflow-y:auto;      /* only vertical scroll */
   -webkit-overflow-scrolling: touch; /* smooth iPhone scroll */
   position:relative;
