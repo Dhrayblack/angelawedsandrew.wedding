@@ -120,6 +120,18 @@ img{
   margin:25px 0;
 }
 
+/* ================= OUR STORY IMAGE FIX ================= */
+
+#ourstory img {
+  width: 100%;
+  max-width: 650px;   /* controls desktop size */
+  height: auto;
+  border-radius: 25px;
+  display: block;
+  margin: 30px auto;
+}
+
+
 /* ================= GREEN SECTIONS ================= */
 
 #fromourhearts,
