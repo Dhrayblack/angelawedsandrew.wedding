@@ -210,7 +210,7 @@ function closeImage() {
 const container = document.getElementById("photoContainer");
 
 if (container) {
-  for (let i = 1; i <= 19; i++) {
+  for (let i = 1; i <= 20; i++) {
     const img = document.createElement("img");
     img.src = `assets/images/photobook/photobook${i}.jpg`;
     img.loading = "lazy";
