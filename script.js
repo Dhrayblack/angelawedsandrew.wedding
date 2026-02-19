@@ -1,6 +1,7 @@
 /* =================================
-   HERO SLIDESHOW – 10 SECONDS
+   HERO SLIDESHOW – FAST LOAD
 ================================= */
+
 const heroImages = [
   "assets/images/hero/hero-1.webp",
   "assets/images/hero/hero-2.webp",
@@ -9,20 +10,27 @@ const heroImages = [
   "assets/images/hero/hero-5.webp"
 ];
 
-
 let heroIndex = 0;
 const heroSection = document.querySelector(".hero");
 
-function updateHero() {
-  if (!heroSection) return;
-  heroSection.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
-  heroIndex = (heroIndex + 1) % heroImages.length;
+if (heroSection) {
+
+  // Show first image immediately
+  heroSection.style.backgroundImage = `url('${heroImages[0]}')`;
+
+  // Preload remaining images in background
+  heroImages.slice(1).forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+
+  // Start slideshow
+  setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroImages.length;
+    heroSection.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
+  }, 10000);
 }
 
-window.addEventListener("load", () => {
-  updateHero();
-  setInterval(updateHero, 10000);
-});  // 10 seconds
 
 
 
