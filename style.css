@@ -228,10 +228,10 @@ img{
   background:rgba(138,184,156,0.88);
   border-radius:25px;
   padding:30px;
-  width:95%;
+  width:85%;
   max-width:1000px;
 
-  height:90vh;           /* use height instead of max-height */
+  height:85vh;           /* use height instead of max-height */
   overflow-y:auto;       /* force vertical scroll only */
   overflow-x:hidden;     /* prevent horizontal bug */
 
