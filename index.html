@@ -225,10 +225,11 @@ Thank you for being part of our story. Open the photo book and walk with us thro
   <div class="card-content">
     <button class="close" aria-label="Close RSVP" onclick="closeRSVP()">×</button>
     <form id="rsvpForm" class="modal" method="POST" action="https://formspree.io/f/xeeladgd" novalidate>
-      <input name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input name="guests" placeholder="Number of guests">
-      <input name="diet" placeholder="Dietary requirements">
+      <input name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input name="guests" placeholder="Number Of Guests">
+      <input name="hotel" placeholder="Will You NeedHotel Accommodation?">
+      <input name="nights" placeholder="Number Of Nights Staying">
       <button type="submit" class="submit-btn">Send RSVP</button>
       <div class="form-status" aria-live="polite" style="margin-top:10px;"></div>
     </form>
