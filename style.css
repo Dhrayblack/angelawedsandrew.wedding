@@ -231,7 +231,7 @@ img{
   width:85%;
   max-width:1000px;
 
-  height:85vh;           /* use height instead of max-height */
+  height:95vh;           /* use height instead of max-height */
   overflow-y:auto;       /* force vertical scroll only */
   overflow-x:hidden;     /* prevent horizontal bug */
 
